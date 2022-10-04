@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Let's get Giphy with it!</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .sub-header {
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+        .forms {
+            margin-bottom: 12px;
+        }
+
+
+        .new-gif {
+            margin-bottom: 10px;
+            max-width: 95%;
+            max-height: 280px;
+            min-width: 400px;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Let's get Giphy with it!</h1>
+        <p class="sub-header">Please use this app to search for a random gif of any given keyword</p>
+        <form class="forms">
+            <input type="text" id="search" name="search" placeholder="Enter a search term" class="form-control mr-2" />
+            <input type="submit" class="btn btn-secondary" value="Search Giphy!" />
+            <button id="remove" class="btn btn-danger ml-2">Remove Images</button>
+        </form>
+        <div id="gif-area" class="row">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+        </script>
+    <!-- <script>
+        $(function () {
+            console.log("Script is loaded");
+            var $gifArea = $("#gif-area");
+            var $searchInput = $("#search");
+
+            $("form").on("submit", function (e) {
+                e.preventDefault();
+                var searchTerm = $searchInput.val();
+                $searchInput.val("");
+                $.get(
+                    "http://api.giphy.com/v1/gifs/search",
+                    {
+                        q: searchTerm,
+                        api_key: "7GiHOt3hMHzPDngEkHMVrdx76YuRv8UY"
+                    }
+                ).then(function (res) {
+                    var numResults = res.data.length;
+                    if (numResults) {
+                        var randomIdx = Math.floor(Math.random() * numResults);
+                        var $newCol = $("<div>", { class: "new-col" });
+                        var $newGif = $("<img>", {
+                            src: res.data[randomIdx].images.original.url,
+                            class: "new-gif"
+                        });
+                        $newCol.append($newGif);
+                        $gifArea.append($newCol);
+                    }
+                });
+            });
+
+            $("#remove").on("click", function () {
+                $gifArea.empty();
+            });
+
+        });
+    </script> -->
+    <script src="script.js"></script>
+    <footer>
+        <p class="footer-item">
+            Created by Zach in Japan 2022
+        </p>
+        <p class="footer-item">This is a practice project focusing on jQuery, AJAX, and web APIs</p>
+    </footer>
+</body>
+
+</html>

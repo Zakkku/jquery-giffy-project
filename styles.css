@@ -1,0 +1,26 @@
+body {
+    background-color: lightslategray;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.sub-header {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.forms {
+    margin-bottom: 12px;
+}
+
+
+.new-gif {
+    margin-bottom: 10px;
+    max-width: 95%;
+    max-height: 280px;
+    min-width: 400px;
+}

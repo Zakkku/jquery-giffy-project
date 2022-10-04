@@ -17,6 +17,11 @@ h1 {
     margin-bottom: 12px;
 }
 
+#search {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
 .btn-secondary {
     background-color: #4CAF50;
     color: white;
@@ -47,4 +52,23 @@ h1 {
     max-width: 95%;
     max-height: 280px;
     min-width: 400px;
+}
+
+/* mobile styling*/
+
+@media screen and (max-width: 500px) {
+
+    #search {
+        width: 80%;
+    }
+
+
+    .btn-secondary {
+        padding: 10px 52px;
+    }
+
+    .form-item {
+        margin: 10px 10px;
+    }
+
 }

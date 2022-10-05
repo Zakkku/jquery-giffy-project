@@ -77,7 +77,7 @@ h1 {
 
 /* mobile styling*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 
     #search {
         width: 80%;
@@ -104,13 +104,28 @@ h1 {
 
 }
 
-/* desktop-only styling*/
 
-@media screen and (min-width: 769px) {
+
+@media screen and (min-width: 1350px) {
     #gif-area {
         display: inline-grid;
         grid-template-columns: auto auto auto;
         padding: 10px;
         /* background-color: #2196F3; */
     }
+}
+
+@media screen and (min-width: 940px) and (max-width: 1350px) {
+    #gif-area {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 940px) {
+
+    /* put something here to get rid of all that extra blue space? */
+
 }

@@ -47,11 +47,13 @@ h1 {
 }
 
 
+#gif-area {}
+
 .new-gif {
-    margin-bottom: 10px;
-    max-width: 95%;
-    max-height: 280px;
-    min-width: 400px;
+    margin: 10px;
+    width: 420px;
+    height: 304px;
+
 }
 
 /* mobile styling*/
@@ -71,4 +73,15 @@ h1 {
         margin: 10px 10px;
     }
 
+}
+
+/* desktop-only styling*/
+
+@media screen and (min-width: 769px) {
+    #gif-area {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        background-color: #2196F3;
+    }
 }

@@ -56,7 +56,7 @@ h1 {
 
 /* mobile styling*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
     #search {
         width: 80%;

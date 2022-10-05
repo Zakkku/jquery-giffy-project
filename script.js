@@ -2,6 +2,11 @@ $(function () {
 
     var $gifArea = $("#gif-area");
     var $searchInput = $("#search");
+    var $body = $("body");
+    var $bodyWidth = $body.css("width");
+
+
+    //console.log($bodyWidth);
 
     $("form").on("submit", function (e) {
         e.preventDefault();
@@ -24,12 +29,23 @@ $(function () {
                 });
                 $newCol.append($newGif);
                 $gifArea.append($newCol);
+                if (parseInt($bodyWidth) >= 769) {
+                    $gifArea.css("background-color", "#2196F3")
+                }
+
+                // if (parseInt($bodyWidth) >= 769) {
+                //     console.log("You are on tablet or desktop view");
+                // } else {
+                //     console.log("You are on mobile view")
+                // }
+
             }
         });
     });
 
     $("#remove").on("click", function () {
         $gifArea.empty();
+        $gifArea.css("background-color", "black");
     });
 
 });

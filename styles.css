@@ -92,6 +92,16 @@ h1 {
         margin: 10px 10px;
     }
 
+    #gif-area {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
 }
 
 /* desktop-only styling*/
@@ -101,6 +111,6 @@ h1 {
         display: inline-grid;
         grid-template-columns: auto auto auto;
         padding: 10px;
-        background-color: #2196F3;
+        /* background-color: #2196F3; */
     }
 }

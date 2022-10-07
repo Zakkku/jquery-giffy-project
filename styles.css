@@ -93,7 +93,11 @@ h1 {
 
     input,
     input::placeholder {
-        font: 16px/3 sans-serif;
+        font: 20px/3 sans-serif;
+    }
+
+    ::placeholder {
+        overflow: visible;
     }
 
     .btn {

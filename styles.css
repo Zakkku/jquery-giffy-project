@@ -80,20 +80,24 @@ h1 {
 @media only screen and (max-width: 600px) {
 
     h1 {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 
     p {
-        font-size: 2.2rem;
+        font-size: 1rem;
     }
 
     .sub-header {
         font-size: 2.2rem;
     }
 
+    .forms {
+        margin-bottom: 5px;
+    }
+
     input,
     input::placeholder {
-        font: 20px/3 sans-serif;
+        font: 19px/3 sans-serif;
     }
 
     ::placeholder {
@@ -105,16 +109,23 @@ h1 {
     }
 
     .btn-danger {
-        padding-top: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     #search {
-        width: 80%;
+        width: 70%;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
 
     .btn-secondary {
-        padding: 10px 52px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .form-item {
@@ -124,6 +135,7 @@ h1 {
     #gif-area {
         padding: 0;
         margin: 0;
+        width: 100%;
     }
 
     body {

@@ -127,12 +127,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 940px) {
 
-    /* put something here to get rid of all that extra blue space? */
-
-
-}
 
 @media screen and (max-width: 940px) {
     #gif-area {
